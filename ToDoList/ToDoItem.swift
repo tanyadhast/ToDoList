@@ -7,11 +7,11 @@
 
 import Foundation
 
-class ToDoItem{
+class ToDoItem: Identifiable{
     //properties
     var title = ""
     var isImportant = false
-    
+    @State var toDoItems: [ToDoItem] = []
     init(title: String, isImportant: Bool = false) {
             self.title = title
             self.isImportant = isImportant
