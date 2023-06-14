@@ -11,7 +11,7 @@ class ToDoItem: Identifiable{
     //properties
     var title = ""
     var isImportant = false
-    @State var toDoItems: [ToDoItem] = []
+    var id = UUID ()
     init(title: String, isImportant: Bool = false) {
             self.title = title
             self.isImportant = isImportant
